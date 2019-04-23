@@ -1,0 +1,85 @@
+html { 
+    background: url(img/18.jpg) no-repeat  center fixed; 
+	background-size: cover;
+}
+.logo{
+	margin-top: 30px;
+	height: 190px;
+}
+
+.menu ul{
+	list-style: none outside none;
+}
+.menu li{
+	display: inline;
+	margin: 20px;
+}
+.menu li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	font-family: 'Exo 2', sans-serif;
+}
+.menu li a:hover{
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+}
+.menu{
+	height: 150px;
+}
+.slogan-middle{
+	height: 200px;
+}
+.slogan{
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	color: #fdf0ba;
+	border: 2px solid #30160e;
+	border-radius: 50px;
+	width: 550px;
+}
+.social{
+	height: 120px;
+}
+.social img{
+	width: 40px;
+	height: 40px;
+	margin-left:17px;
+}
+.post{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	height: 50px;
+	font-weight: 800;
+}
+
+.shared{
+	display: inline-flex;
+	height: 350px;
+}
+.box{
+	width: 300px;
+	background-color: ;
+	margin-left: 20px;
+}
+.box img{
+	width: 250px;
+	height: 200px;
+}
+.box img:hover{
+	width: 270px;
+	height: 220px;
+}
+.box a{
+	text-decoration: none;
+	font-family: 'Exo 2', sans-serif;
+	color: #fdf0ba;
+	font-size: 18px;
+}
+.box p{
+	font-family: 'Lato', sans-serif;
+	color:#fff;
+	font-size:12px;
+}
