@@ -1,1 +1,0 @@
-Safvan Avcı
