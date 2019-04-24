@@ -1,0 +1,80 @@
+html { 
+    background: url(img/background.jpg) no-repeat  center fixed; 
+	background-size: cover;
+}
+.navbar{
+    height: 60px;
+    background-color: #f0ff00;
+}
+.nav{
+    width: 895px;
+    margin: 0px auto;
+}
+.navbar img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top:10px;
+    margin-left:10px;
+}
+.nav :first-child{
+    width: 30px;
+    height: 25px;
+    margin-top:13px;
+}
+.main{
+    width: 895px;
+    margin: 0px auto;
+}
+.product{
+    width: 280px;
+    height: 320px;
+    margin-left: 15px;
+    margin-top:20px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #ffffff
+}
+.product img{
+    margin-left: 35px;
+    width: 200px;
+    height: 200px;
+}
+.product p{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #aaaa07;
+}
+.product a{
+    text-decoration: none;
+
+}
+.buy{
+    width: 180px;
+    margin: 0px auto;
+    margin-top: 20px;
+    
+}
+.buy p{
+    float: right;
+    font-family: 'Anton', sans-serif;
+    color: #aaaa07;
+}
+.buy img{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.middle{
+    height: 300px;
+    background-color: black;
+}
+.middle-content{
+    width: 895px;
+    margin: 0px auto;
+}
+.footer{
+    background-color: #f0ff00;
+    height: 80px;
+}
