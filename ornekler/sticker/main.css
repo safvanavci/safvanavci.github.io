@@ -1,0 +1,178 @@
+html { 
+    background: url(img/background.jpg) no-repeat  center fixed; 
+	background-size: cover;
+}
+.navbar{
+    height: 110px;
+    background-color:#f0ff00;
+}
+.nav-menu{
+    float: left;
+    width: 600px;
+}
+.bar{
+    width: 880px;
+    margin: 0px auto;
+    position: relative;
+    top: 85px;
+    display: flex
+}
+
+.bar img{
+    width: 25px;
+    height: 25px;
+}
+.nav-menu >ul{
+    float: left;
+}
+.nav-menu ul ul{
+	width: 130px;
+    display: none;
+    position: absolute;
+    background-color: #f0ff00;
+    margin-top: 5px;
+}
+
+.nav-menu> ul > li{
+    float: left;
+    padding-left: auto;
+    position: relative;
+  
+  }
+.nav-menu ul >li:hover ul{
+	display: block;
+}
+.nav-menu ul a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: 'Anton', sans-serif;
+    color: #000000; 
+}
+.nav-menu a:hover{
+    color: #ffffff
+}
+.nav-logo{
+    position: fixed;
+    width: 100%;
+    background-color:rgba(235, 252, 5, 0.616);
+}
+
+
+.main{
+    width: 895px;
+    height: 750px;
+    margin: 0px auto;
+}
+.product{
+    width: 280px;
+    height: 320px;
+    margin-left: 15px;
+    margin-top:20px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342);
+    transition: 0.3s;
+    background-color: #ffffff
+}
+.product img{
+    margin-left: 35px;
+    width: 200px;
+    height: 200px;
+}
+.product p{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #000000;
+}
+.product a{
+    text-decoration: none;
+
+}
+.buy{
+    display: inline-flex;
+    height: 40px;
+    margin-top:14px;
+
+}
+.add{
+    border-radius: 10px;
+    border:1px solid;
+    height: 40px;
+    width: 100px;
+    margin-left: 30px;
+    background-color: #f0ff00;
+}
+.get{
+    border:1px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: #f0ff00;
+    margin-left: 25px;
+
+}
+.buy a:hover{
+    color: #ffffff
+}
+.buy  a{
+    margin-left:14px; 
+    position: relative;
+    top: 10px;
+    color: #000000;
+    font-family: 'Anton', sans-serif;
+}
+.middle{
+    height: 300px;
+    background-color:rgba(235, 252, 5, 0.692)
+    
+}
+.middle-content{
+    width: 895px;
+    margin: 0px auto;
+}
+.footer{
+    background-color: #f0ff00;
+    height: 80px;
+}
+
+.slider img{
+    width: 280px;
+    height:280px;
+}
+.slider{
+    width: 280px;
+    height: 280px;
+    float: left;
+}
+.campaign h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding-top:40px;
+}
+#box {
+    position: relative;
+    float: right
+}
+ 
+#box .fa-search {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 20px;
+    color:black;
+    
+}
+ 
+#search {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    height: 20px;
+    background-color: #f0ff00
+    
+}
+ 
