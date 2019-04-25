@@ -1,0 +1,355 @@
+html { 
+    background: url(img/background.jpg) no-repeat  center fixed; 
+	background-size: cover;
+}
+.navbar{
+    height: 110px;
+    background-color:#f0ff00;
+}
+.nav-menu{
+    float: left;
+    width: 600px;
+}
+
+.bar{
+    width: 880px;
+    margin: 0px auto;
+    position: relative;
+    top: 85px;
+    display: flex
+}
+
+.bar img{
+    width: 25px;
+    height: 25px;
+}
+.nav-menu >ul{
+    float: left;
+}
+.nav-menu ul ul{
+    width: 150px;
+    padding-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f0ff00;
+    margin-top: 5px;
+    line-height: 21px;
+    z-index: 2;
+}
+
+.nav-menu> ul > li{
+    float: left;
+    padding-left: auto;
+    position: relative;
+  
+  }
+.nav-menu ul >li:hover ul{
+    display: block;
+}
+.nav-menu ul a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: 'Anton', sans-serif;
+    color: #000000; 
+}
+.nav-menu a:hover{
+    color: #ffffff
+}
+.nav-logo{
+    position: fixed;
+    width: 100%;
+    background-color:rgba(235, 252, 5, 0.616);
+    z-index: 1;
+}
+
+
+.main{
+    width: 895px;
+    height: 750px;
+    margin: 0px auto;
+}
+.product{
+    width: 280px;
+    height: 320px;
+    margin-left: 15px;
+    margin-top:20px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342);
+    transition: 0.3s;
+    background-color: #ffffff
+}
+.product img{
+    margin-left: 35px;
+    width: 200px;
+    height: 200px;
+}
+.product p{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #000000;
+}
+.product a{
+    text-decoration: none;
+
+}
+.buy{
+    display: inline-flex;
+    height: 40px;
+    margin-top:14px;
+
+}
+.add{
+    border-radius: 10px;
+    border:1px solid;
+    height: 40px;
+    width: 100px;
+    margin-left: 30px;
+    background: -webkit-linear-gradient(#f0ff00,#ffa602);
+    
+}
+.get{
+    border:1px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background: -webkit-linear-gradient(#f0ff00,#ffa602);
+    margin-left: 25px;
+
+}
+.buy a:hover{
+    color: #ffffff
+}
+.buy  a{
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    color: #000000;
+    font-family: 'Anton', sans-serif;
+}
+.middle{
+    height: 300px;
+    background-color:rgba(235, 252, 5, 0.692)
+    
+}
+.middle-content{
+    width: 895px;
+    margin: 0px auto;
+}
+/*slider*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+    width: 240px;
+    height: 250px;;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: rgb(255, 145, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #9b4b00;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slider{ 
+    width: 200px; 
+    height: 210px; 
+    float: left; }
+.campaign h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding-top:40px;
+}
+#box {
+    position: relative;
+    float: right
+}
+ 
+#box .fa-search {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 20px;
+    color:black;
+    
+}
+ 
+#search {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    height: 20px;
+    background-color: #f0ff00
+    
+}
+.footer{
+    background-color: #f0ff00;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block
+}
+.footer-center{
+    width: 895px;
+    margin: 0px auto;
+    font-family: 'Lato', sans-serif;
+
+}
+.contact{
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+.pages{
+    margin-top: 20px;
+    float: right;
+    width: 95px;
+    display: inline-block;
+    line-height: 22px;
+    margin-left: 20px;
+}
+.pages a{
+    text-decoration: none;
+    color: #000000
+
+}
+.contact img{
+    width: 25px;
+    height: 25px;
+}
+/**PRODUCT CSS**/
+.product-content{
+    width: 895px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+.product-image{
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    background-color: #ffffff;
+    float: left;
+    
+}
+.product-images img{
+    width: 200px;
+    height: 300px;
+}
+.header-box{
+    height: 50px;
+    width: 675px;
+    background-color: #ffffff;
+    float: right;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.product-box{
+    margin-left: 15px;
+    margin-top: 7px;
+    height: 400px;
+    position: relative;
+    width: 675px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    display: inline-block;
+}
+.product-features{
+    width: 600px;
+    margin: 0px auto;
+    position: relative;
+    top:20px;
+    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.product-features a{
+    text-decoration: none;
+    line-height: 40px;
+    color: #000000;
+    display: block;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.product-features ul{
+    position: absolute;
+}
+.product-features a:hover{
+    color: white;
+}
+.product-features .add{
+    float: right;
+    position: relative;
+    top: 230px;
+}
+.product-features .get{
+    float: right;
+    position: relative;
+    top: 230px;
+}
+.proposal-box{
+    width: 895px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+.proposal{
+    width: 895px;
+    margin: 0px auto;
+    height: 400px;
+    margin-top: 10px;
+}
+.proposal .product{
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    border-radius:7px; 
+}

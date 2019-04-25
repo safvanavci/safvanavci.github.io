@@ -1,0 +1,171 @@
+html { 
+    background: url(../img/background.jpg) no-repeat  center fixed; 
+	background-size: cover;
+}
+.navbar{
+    height: 110px;
+    background-color:#f0ff00;
+}
+.nav-menu{
+    float: left;
+    width: 600px;
+}
+
+.bar{
+    width: 880px;
+    margin: 0px auto;
+    position: relative;
+    top: 85px;
+    display: flex
+}
+
+.bar img{
+    width: 25px;
+    height: 25px;
+}
+.nav-menu >ul{
+    float: left;
+}
+.nav-menu ul ul{
+    z-index: 1;
+    width: 150px;
+    padding-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f0ff00;
+    margin-top: 5px;
+}
+
+.nav-menu> ul > li{
+    float: left;
+    padding-left: auto;
+    position: relative;
+  
+  }
+.nav-menu ul >li:hover ul{
+    display: block;
+}
+.nav-menu ul a{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: 'Anton', sans-serif;
+    color: #000000; 
+}
+.nav-menu a:hover{
+    color: #ffffff
+}
+.nav-logo{
+    position: fixed;
+    width: 100%;
+    background-color:rgba(235, 252, 5, 0.616);
+    z-index: 1;
+}
+#box {
+    position: relative;
+    float: right
+}
+ 
+#box .fa-search {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 20px;
+    color:black;
+    
+}
+ 
+#search {
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    height: 20px;
+    background-color: #f0ff00
+    
+}
+
+.product-content{
+    width: 895px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+.product-image{
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    background-color: #ffffff;
+    float: left;
+    
+}
+.product-images img{
+    width: 200px;
+    height: 300px;
+}
+.header-box{
+    height: 50px;
+    width: 675px;
+    background-color: #ffffff;
+    float: right;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.product-box{
+    margin-left: 15px;
+    margin-top: 7px;
+    height: 400px;
+    position: relative;
+    width: 675px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.822);
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #f0ff00;
+    height: 300px;
+}
+.footer-center{
+    width: 895px;
+    margin: 0px auto;
+}
+.contact{
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+.pages{
+    margin-top: 20px;
+    float: right;
+    width: 90px;
+    display: inline-block;
+    line-height: 22px;
+    margin-left: 20px;
+}
+.pages a{
+    text-decoration: none;
+    color: #000000
+
+}
+.contact img{
+    width: 25px;
+    height: 25px;
+}
