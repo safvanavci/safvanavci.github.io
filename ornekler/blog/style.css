@@ -49,10 +49,9 @@ html{
         line-height: 40px;
     }
     .menu ul li{
-        margin-right: 10px;
         display: inline-block;
     }
-    .menu li:hover{
+    .menu a:hover{
         border: 1px solid;
         border-radius: 7px;
     }
@@ -60,6 +59,7 @@ html{
         width: 1000px;
         margin: 0px auto; 
         font-family: sans-serif;
+        height: 900px;
     }
     .box{
         background-color:#EDEFE2;
@@ -172,4 +172,44 @@ html{
 .social-media img:hover{
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     border-radius: 20px;
+}
+.more{
+    background-color:#EDEFE2;
+    width: 140px;
+    height: 40px;
+    margin: 0px auto;
+    border: 1px solid #bec6ce;
+    margin-top: 15px;
+}
+.more a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+}
+.more a:hover{
+    background-color: #bec6ce;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+
+
+}
+.footer{
+    height: 100px;
+    background-color: black;
+    margin-top: 20px;
+}
+.footer-box{
+    width: 1000px;
+    margin: 0px auto;
+    position: relative;
+    top: 40px;
+}
+.footer-box p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px
 }
