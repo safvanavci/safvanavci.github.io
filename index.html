@@ -1,125 +1,223 @@
 <!DOCTYPE html>
-
-<html>
-   <head>
-   <meta charset = "utf-8"/>
-   <link rel="stylesheet" href="folder/main.css">
-   <link rel="stylesheet" href="folder/reset.css">
-   <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-   <link rel="SHORTCUT ICON" href="folder/icon.png">
-   <title>Safvan Avcı</title>
-   
-   </head>
-   
-   <body>
-
-
-<center><div class="content">
-         <div class="left-box">
-               <h1>Safvan Avcı</h1>
-
-            <div class="image">
-              <center> <img src="folder/2.jpg" alt=""></center>
-            </div>
-            <p>Merhaba ben Safvan.</p> <br>
-            <p>Web Tasarım ve Kodlama birinci sınıf öğrencisiyim. JR seviyede HTML5 ve CSS3 bilgisine sahibim. Her geçen gün kendimi geliştiriyor, yeni bir şeyler öğrenmeye çalışıyorum.</p>
-         <div class="contact">
-             <ul>
-               <li><a href="https://www.instagram.com/safvanavci/"><img src="folder/instagram.png" alt=""></a></li>
-               <li><a href="https://www.linkedin.com/in/safvan-avc%C4%B1-7a5b10114/"><img src="folder/linkedin.png" alt=""></a></li>
-               <li><a href="https://twitter.com/safvanavci"><img src="folder/twitter.png" alt=""></a></li>
-               <li><a href="mailto:safvanavci25@gmail.com"><img src="folder/gmail.png" alt=""></a></li>
-
-            </ul> 
-          </div>
-         </div>
-          <div class="right-box">
-             <h1>Yaptıklarım</h1>
-             <div id="slider">
-                  <div class="slayt" >
-                        <a href="https://safvanavci.github.io/ornekler/blog/index.html"target="_blank"> <img src="folder/blog.png" width="700" height="450" /></a>
-                       
-                   </div>
-                   <div class="slayt">
-                        <a href="https://safvanavci.github.io/ornekler/moda/index.html"target="_blank"> <img src="folder/moda.png" width="700" height="450" /></a>
-                       
-                   </div>
-                   <div class="slayt">
-                        <a href="https://safvanavci.github.io/ornekler/dekor/index.html"target="_blank"> <img src="folder/dekor.png" width="700" height="450" /></a>
-                        
-                   </div>
-                   <div class="slayt">
-                        <a href="https://safvanavci.github.io/ornekler/sticker/index.html"target="_blank"> <img src="folder/sticker.png" width="700" height="450" /></a>
-                        
-                   </div>
-                   
-                   <!--Slayt numaraland覺rma-->
-                   <div class="slaytsirasi">
-                  <ul>
-                       <li onmouseover="aktif=0; slider();"></li>
-                       <li onmouseover="aktif=1; slider();"></li>
-                       <li onmouseover="aktif=2; slider();"></li>
-                       <li onmouseover="aktif=3; slider();"></li>
-                   </ul>
-               </div>
-               </div>
-         </div>
-      </div>
-     
-</center>   
-   </body>
-   <script type="text/javascript" language="javascript">
-      var aktif=0;
-      var pasif=null;
-      slider();
-      
-      var ileri=document.createElement('div');
-      ileri.style.right="0";
-      ileri.innerHTML=">";
-      ileri.className="ileri";
-      ileri.onclick=function(){slider();}
-      var geri=document.createElement("div");
-      geri.style.left="0";
-      geri.innerHTML="<";
-      geri.className="geri";
-      geri.onclick=function(){ aktif-=2; slider();}
-      var anadiv=document.getElementById("slider");
-      anadiv.appendChild(ileri);
-      anadiv.appendChild(geri);
-      
-      
-      anadiv.onmouseover=function(){clearTimeout(slayt_zaman);}
-      anadiv.onmouseout=function(){slayt_zaman=setInterval(slider,5000);}
-      
-      function slider(){
-          
-         if(aktif>=document.getElementsByClassName("slayt").length){ 
-         aktif=0;
-         }else if(aktif<0){ 
-         aktif=document.getElementsByClassName("slayt").length-1; }
-      if(pasif!=null){
-         
-         var pasifdiv=document.getElementsByClassName("slayt")[pasif];
-         pasifdiv.style.animation="hareketsagsol2 linear 1s";
-         pasifdiv.style.right="-700px";
-         
-         }
-         
-         for(var s=0;s<document.getElementsByTagName("li").length;s++){
-             document.getElementsByTagName("li")[s].setAttribute("class","");
-         }
-         
-         var aktifdiv=document.getElementsByClassName("slayt")[aktif];
-         aktifdiv.style.animation="hareketsagsol linear 1s";
-         aktifdiv.style.opacity="1";
-         aktifdiv.style.right="0px";
-             document.getElementsByTagName("li")[aktif].setAttribute("class","aktifLi");
-         
-      pasif=aktif;
-      aktif++;
-      }
-         var slayt_zaman=setInterval(slider,5000);
-   </script>
+<html lang="en">
+  <head>
+    <title>Safvan Avcı</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="SHORTCUT ICON" href="images/icon.png">
+
+  </head>
+  <body>
+
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar">
+
+      </div>
+    </div>
+    <div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      
+    </nav>
+    
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="index.html"><span class="logo-img" style="background-image: url(images/person_1.jpg);"></span>Safvan Avcı</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+    
+      
+      <!-- END slider -->
+
+      <section class="ftco-section about-section">
+        <div class="container">
+          <div class="row d-flex" data-scrollax-parent="true">
+            <div class="col-md-4 author-img" style="background-image: url(images/author-1.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6 wrap ftco-animate">
+              <div class="about-desc">
+                <h1 class="bold-text">HAKKIMDA</h1>
+                <div class="p-5">
+                  <h2 class="mb-5">Merhaba Ben Safvan</h2>
+                  <p>Web Tasarım ve Kodlama birinci sınıf öğrencisiyim. Jr seviyede HTML5 ve CSS3 bilgisine sahibim. Kendimi geliştirmeyi yeni şeyler öğrenmeyi ve insanların tecrübelerinden faydalanmaktan hoşlanıyorum.</p>
+                  <br> 
+                  <ul class="ftco-footer-social list-unstyled mt-4">
+                    <li><a href="https://twitter.com/safvanavci"target="_blank"><span class="icon-twitter"></span></a></li>
+                    <li><a href="https://www.instagram.com/safvanavci/"target="_blank"><span class="icon-instagram"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/safvan-avc%C4%B1-7a5b10114/"target="_blank"><span class="icon-linkedin"></span></a></li>
+                    
+
+                  </ul>
+                  <h5>Bana Ulaşabilirsiniz</h5>
+                  <p>Mail: <a href="#">safvanavci25@gmail.com</a></p>
+                  <br> <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="ftco-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span>Portfolio</span>
+              <h2>Çalışmalarımı   İnceleyebilirsiniz</h2>
+            </div>
+          </div>
+          <div class="row no-gutters">
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="https://safvanavci.github.io/ornekler/minimo/index.html" target="_blank"class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-1.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+              <div class="icon d-flex text-center justify-content-center align-items-center">
+                <span class="icon-search"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h4 class="subheading">Tema</h4>
+              <h2 class="heading"><a href="https://safvanavci.github.io/ornekler/minimo/index.html" target="_blank">Minimo</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
+              <p><a href="https://safvanavci.github.io/ornekler/minimo/index.html" target="_blank">View Project</a></p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="https://safvanavci.github.io/ornekler/moda/index.html"target="_blank" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-2.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+              <div class="icon d-flex text-center justify-content-center align-items-center">
+                <span class="icon-search"></span>
+              </div>
+            </a>
+            <div class="text order-1">
+              <h4 class="subheading">Tema</h4>
+              <h2 class="heading"><a href="https://safvanavci.github.io/ornekler/moda/index.html"target="_blank">Center of Fashion</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
+              <p><a href="https://safvanavci.github.io/ornekler/moda/index.html"target="_blank">View Project</a></p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="https://safvanavci.github.io/ornekler/blog/index.html"target="_blank" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-3.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+              <div class="icon d-flex text-center justify-content-center align-items-center">
+                <span class="icon-search"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h4 class="subheading">Tema</h4>
+              <h2 class="heading"><a href="https://safvanavci.github.io/ornekler/blog/index.html"target="_blank">My World</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
+              <p><a href="https://safvanavci.github.io/ornekler/blog/index.html"target="_blank">View Project</a></p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="https://safvanavci.github.io/ornekler/dekor/index.html"target="_blank" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-4.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+              <div class="icon d-flex text-center justify-content-center align-items-center">
+                <span class="icon-search"></span>
+              </div>
+            </a>
+            <div class="text order-1">
+              <h4 class="subheading">Tema</h4>
+              <h2 class="heading"><a href="https://safvanavci.github.io/ornekler/dekor/index.html"target="_blank">İnter Dekor</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
+              <p><a href="https://safvanavci.github.io/ornekler/dekor/index.html"target="_blank">View Project</a></p>
+            </div>
+          </div>
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a href="https://safvanavci.github.io/ornekler/sticker/index.html"target="_blank" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-5.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+              <div class="icon d-flex text-center justify-content-center align-items-center">
+                <span class="icon-search"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h4 class="subheading">Tema</h4>
+              <h2 class="heading"><a href="https://safvanavci.github.io/ornekler/sticker/index.html"target="_blank">Stickercınız</a></h2>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
+              <p><a href="https://safvanavci.github.io/ornekler/sticker/index.html"target="_blank">View Project</a></p>
+            </div>
+          </div>
+         
+        </div>
+        </div>
+      </section>
+
+      
+      
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-5 text-center">
+              <div class="ftco-footer-widget mb-5">
+                <ul class="ftco-footer-social list-unstyled">
+                  <li class="ftco-animate"><a href="https://twitter.com/safvanavci"target="_blank"><span class="icon-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/in/safvan-avc%C4%B1-7a5b10114/"target="_blank"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.instagram.com/safvanavci/"target="_blank"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+              <div class="ftco-footer-widget">
+                <h2 class="mb-3">Bana Ulaşabilirsiniz</h2>
+                <p class="h3 email"><a href="mailto:safvanavci25@gmail.com">safvanavci25@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+      </div>
+
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
 </html>
